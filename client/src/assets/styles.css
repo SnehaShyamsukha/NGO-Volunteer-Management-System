@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+
+.card {
+    border-radius: 12px;
+}
+
+
+.nav-link.active {
+    font-weight: bold;
+}

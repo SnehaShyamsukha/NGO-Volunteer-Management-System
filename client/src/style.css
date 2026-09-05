@@ -1,0 +1,524 @@
+:root {
+
+  --ngo-bg: #12121a;
+  --ngo-card: #1c1c29;
+  --ngo-card-soft: #242438;
+
+  --ngo-primary: #c084fc;
+  --ngo-pink: #ff7b9c;
+  --ngo-blue: #5dade2;
+  --ngo-green: #58d68d;
+  --ngo-yellow: #f7c948;
+
+  --ngo-text: #e5e7eb;
+  --ngo-muted: #a1a1aa;
+
+  --ngo-border: rgba(255,255,255,0.08);
+
+  --ngo-shadow:
+  0 10px 30px rgba(0,0,0,0.35);
+
+
+  font-family:
+  "Inter",
+  "Segoe UI",
+  Roboto,
+  sans-serif;
+
+
+  color:var(--ngo-text);
+
+  background:
+  linear-gradient(
+    135deg,
+    #11111a,
+    #191827
+  );
+
+}
+
+
+
+*{
+  box-sizing:border-box;
+}
+
+
+
+body{
+
+  margin:0;
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+    135deg,
+    #11111a,
+    #191827
+  );
+
+  color:var(--ngo-text);
+
+}
+
+
+
+/* Main container */
+
+.container,
+.container-fluid{
+
+  color:var(--ngo-text);
+
+}
+
+
+
+/* Headings */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+  color:#ffffff;
+
+  font-weight:700;
+
+}
+
+
+
+/* Cards */
+
+
+.card{
+
+  background:
+  linear-gradient(
+    145deg,
+    #202033,
+    #181824
+  ) !important;
+
+
+  border:
+
+  1px solid var(--ngo-border)
+  !important;
+
+
+  border-radius:18px !important;
+
+
+  color:white;
+
+
+  box-shadow:
+  var(--ngo-shadow);
+
+
+  transition:
+  transform .3s ease,
+  box-shadow .3s ease;
+
+}
+
+
+
+.card:hover{
+
+
+ transform:
+ translateY(-5px);
+
+
+ box-shadow:
+ 0 15px 40px rgba(0,0,0,.5);
+
+}
+
+
+
+/* Dashboard statistic cards */
+
+
+.card h2{
+
+ color:white;
+
+}
+
+
+
+.card h6{
+
+ color:#d1d5db;
+
+}
+
+
+
+/* Tables */
+
+
+.table{
+
+ color:#e5e7eb;
+
+ background:#1c1c29;
+
+ border-radius:15px;
+
+ overflow:hidden;
+
+}
+
+
+
+.table thead{
+
+ background:
+
+ linear-gradient(
+ 135deg,
+ #2d2b45,
+ #1f1f31
+ );
+
+}
+
+
+
+.table-dark{
+
+ --bs-table-bg:#242438 !important;
+
+}
+
+
+
+.table td,
+.table th{
+
+ padding:15px;
+
+ border-color:
+ rgba(255,255,255,.08);
+
+}
+
+
+
+.table tbody tr:hover{
+
+ background:
+ rgba(192,132,252,.08);
+
+}
+
+
+
+/* Buttons */
+
+
+.btn-primary{
+
+ background:
+ linear-gradient(
+ 135deg,
+ #c084fc,
+ #8b5cf6
+ ) !important;
+
+
+ border:none !important;
+
+}
+
+
+
+.btn-success{
+
+ background:
+ linear-gradient(
+ 135deg,
+ #58d68d,
+ #16a34a
+ ) !important;
+
+
+ border:none !important;
+
+}
+
+
+
+.btn-danger{
+
+ background:
+ linear-gradient(
+ 135deg,
+ #ff7b9c,
+ #ef4444
+ ) !important;
+
+
+ border:none !important;
+
+}
+
+
+
+.btn-warning{
+
+ background:
+ linear-gradient(
+ 135deg,
+ #f7c948,
+ #f59e0b
+ ) !important;
+
+
+ border:none !important;
+
+ color:#111 !important;
+
+}
+
+
+
+/* Badges */
+
+
+.badge{
+
+ padding:8px 12px;
+
+ border-radius:20px;
+
+}
+
+
+
+/* Charts */
+
+
+canvas{
+
+ max-height:350px;
+
+}
+
+
+
+/* Chart container cards */
+
+
+.card h5{
+
+ color:#ffffff;
+
+}
+
+
+
+/* Navbar / Layout support */
+
+
+.navbar,
+.sidebar{
+
+ background:#181824 !important;
+
+ color:white;
+
+}
+
+
+
+/* Forms */
+
+
+input,
+textarea,
+select{
+
+ background:#202033 !important;
+
+ color:white !important;
+
+ border:
+
+ 1px solid rgba(255,255,255,.15)
+ !important;
+
+
+}
+
+
+
+input::placeholder{
+
+ color:#9ca3af;
+
+}
+
+
+
+/* Links */
+
+
+a{
+
+ color:#c084fc;
+
+ text-decoration:none;
+
+}
+
+
+
+a:hover{
+
+ color:#ff7b9c;
+
+}
+
+
+
+/* Loading spinner */
+
+
+.spinner-border{
+
+ color:#c084fc !important;
+
+}
+
+
+
+/* Volunteer contribution chart */
+
+
+canvas{
+
+ background:transparent;
+
+}
+
+
+
+/* Certificates cards */
+
+
+.certificate-card{
+
+ background:
+
+ linear-gradient(
+ 135deg,
+ #25253b,
+ #171724
+ );
+
+ border-radius:20px;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+.card{
+
+ margin-bottom:15px;
+
+}
+
+
+h2{
+
+ font-size:24px;
+
+}
+
+
+}
+.activity-card{
+padding:15px;
+border-radius:15px;
+background:linear-gradient(135deg,#FADBD8,#D6EAF8);
+transition:0.3s;
+}
+
+.activity-card:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.certificate-card{
+
+padding:25px;
+
+border-radius:22px;
+
+background:
+linear-gradient(
+135deg,
+#1f2937,
+#374151
+);
+
+color:white;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,0.15);
+
+transition:0.3s;
+
+}
+
+
+
+.certificate-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.certificate-header{
+
+font-size:22px;
+
+font-weight:700;
+
+color:#F7C948;
+
+}
+
+
+
+.certificate-card p{
+
+color:#e5e7eb;
+
+}
+
+
+
+.certificate-card strong{
+
+color:#ffffff;
+
+}
