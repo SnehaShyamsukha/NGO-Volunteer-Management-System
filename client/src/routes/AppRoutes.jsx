@@ -35,7 +35,7 @@ import EditEvent from "../pages/admin/EditEvent.jsx";
 import Registrations from "../pages/admin/Registrations.jsx";
 import Attendance from "../pages/admin/Attendance.jsx";
 
-import AdminCertificates from "../pages/admin/CERTIFICATES.jsx";
+import AdminCertificates from "../pages/admin/Certificates.jsx";
 import ActivityLogs from "../pages/admin/ActivityLogs.jsx";
 
 
